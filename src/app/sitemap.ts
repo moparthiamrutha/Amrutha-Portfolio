@@ -4,17 +4,17 @@ export default function sitemap() {
   const posts = getAllPosts();
 
   const blogEntries = posts.map((post) => ({
-    url: `https://www.linkedin.com/in/krishnaaaaaa/`,
+    url: `https://www.linkedin.com/in/amrutha-moparthi-921967222/`,
     lastModified: new Date(post.date),
   }));
 
   return [
     {
-      url: "https://www.linkedin.com/in/krishnaaaaaa/",
+      url: "https://www.linkedin.com/in/amrutha-moparthi-921967222/",
       lastModified: new Date(),
     },
     {
-      url: "https://www.linkedin.com/in/krishnaaaaaa/",
+      url: "https://www.linkedin.com/in/amrutha-moparthi-921967222/",
       lastModified: new Date(),
     },
     ...blogEntries,

@@ -2,42 +2,47 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --font-lora: "Lora", serif;
-  --font-dm-sans: "DM Sans", sans-serif;
-  --color-accent: #D97706;
-  --color-accent-light: #FEF3C7;
-  --color-accent-dark: #B45309;
+  --font-spectral: "Spectral", serif;
+  --font-space-grotesk: "Space Grotesk", sans-serif;
+  --color-accent: #f59e0b;
+  --color-muted: #94a3b8;
+  --color-surface: #0f172a;
+  --color-surface-muted: #111827;
 }
 
 html {
   scroll-behavior: smooth;
-  font-family: var(--font-dm-sans);
+  font-family: var(--font-space-grotesk);
+}
+
+body {
+  background: radial-gradient(circle at top, rgba(245, 158, 11, 0.09), transparent 32%), linear-gradient(180deg, #020617 0%, #0f172a 100%);
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-lora);
+  font-family: var(--font-spectral);
 }
 
 /* Blog — fully standalone typography */
 .blog-layout {
-  font-family: var(--font-merriweather, Georgia, serif);
-  background-color: #FAFAF7;
-  color: #1C1C1C;
+  font-family: var(--font-spectral, Georgia, serif);
+  background-color: #0f172a;
+  color: #e2e8f0;
 }
 
 .blog-layout h1,
 .blog-layout h2,
 .blog-layout h3,
 .blog-layout h4 {
-  font-family: var(--font-playfair, Georgia, serif);
+  font-family: var(--font-spectral, Georgia, serif);
 }
 
 /* Blog prose overrides */
 .blog-prose {
-  font-family: var(--font-merriweather, Georgia, serif);
+  font-family: var(--font-space-grotesk, system-ui, sans-serif);
   font-size: 1.0625rem;
   line-height: 1.85;
-  color: #1C1C1C;
+  color: #e2e8f0;
 }
 
 .blog-prose p { margin-bottom: 1.5rem; }

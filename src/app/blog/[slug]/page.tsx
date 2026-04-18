@@ -21,13 +21,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     const { data } = matter(fileContent);
 
     return {
-        title: `${data.title} | Sai Krishna`,
+        title: `${data.title} | Amrutha Moparthi`,
         description: data.description,
         openGraph: {
             title: data.title,
             description: data.description,
-            url: `https://www.linkedin.com/in/krishnaaaaaa/`,
-            siteName: "Sai Krishna",
+            url: `https://www.linkedin.com/in/amrutha-moparthi-921967222/`,
+            siteName: "Amrutha Moparthi",
             type: "article",
             ...(data.image && { images: [{ url: data.image }] }),
         },
@@ -99,7 +99,7 @@ export default async function BlogPost({ params }: { params: Promise<{ slug: str
             <footer className="border-t max-w-2xl mx-auto px-6 py-8 flex justify-between items-center text-xs"
                 style={{ borderColor: "#E5DDD5", color: "#8C8880" }}
             >
-                <span>Sai Krishna</span>
+                <span>Amrutha Moparthi</span>
                 <Link href="/" className="transition hover:text-[#1C1C1C]">
                     ← Back to portfolio
                 </Link>

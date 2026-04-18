@@ -19,59 +19,27 @@ export default function Navbar() {
     <nav
       className={`sticky top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white shadow-sm border-b"
-          : "bg-white/70 backdrop-blur border-b"
+          ? "bg-slate-950/95 shadow-2xl shadow-slate-950/20 border-b border-slate-800"
+          : "bg-slate-950/75 backdrop-blur border-b border-slate-900/20"
       }`}
     >
-      <div className="max-w-5xl mx-auto px-5 py-3 md:px-6 md:py-4 flex justify-between items-center">
+      <div className="max-w-6xl mx-auto px-5 py-4 md:px-6 flex justify-between items-center">
 
-        {/* Name / Logo */}
         <a
           href="#top"
-          className="group font-semibold tracking-tight flex items-center gap-2 transition hover:text-[#D97706]"
+          className="group font-semibold tracking-tight flex items-center gap-2 text-slate-100 transition hover:text-amber-400"
         >
-          <FiUser className="text-gray-600 group-hover:text-[#D97706] transition" />
-          Sai Krishna
+          <FiUser className="text-amber-300 group-hover:text-amber-400 transition" />
+          Amrutha Moparthi
         </a>
 
-        {/* Navigation */}
-        <div className="hidden md:flex gap-8 text-sm tracking-wide">
-          <a
-            href="#about"
-            className="text-gray-600 hover:text-[#D97706] transition"
-          >
-            About
-          </a>
-          <a
-            href="#experience"
-            className="text-gray-600 hover:text-[#D97706] transition"
-          >
-            Experience
-          </a>
-          <a
-            href="#skills"
-            className="text-gray-600 hover:text-[#D97706] transition"
-          >
-            Skills
-          </a>
-          <a
-            href="#certifications"
-            className="text-gray-600 hover:text-[#D97706] transition"
-          >
-            Certifications
-          </a>
-          <a
-            href="#services"
-            className="text-gray-600 hover:text-[#D97706] transition"
-          >
-            Services
-          </a>
-          <a
-            href="#contact"
-            className="text-gray-600 hover:text-[#D97706] transition"
-          >
-            Contact
-          </a>
+        <div className="hidden md:flex gap-8 text-sm tracking-wide text-slate-300">
+          <a href="#about" className="transition hover:text-amber-400">Summary</a>
+          <a href="#experience" className="transition hover:text-amber-400">Experience</a>
+          <a href="#skills" className="transition hover:text-amber-400">Expertise</a>
+          <a href="#certifications" className="transition hover:text-amber-400">Certifications</a>
+          <a href="#services" className="transition hover:text-amber-400">Solutions</a>
+          <a href="#contact" className="transition hover:text-amber-400">Contact</a>
         </div>
       </div>
     </nav>

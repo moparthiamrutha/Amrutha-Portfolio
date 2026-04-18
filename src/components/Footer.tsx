@@ -1,41 +1,27 @@
 
 export default function Footer() {
+  return (
+    <footer className="bg-slate-950 pt-16 pb-12">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="border-t border-slate-800 mb-8" />
 
-    return (
-        <footer className="bg-white pt-16 pb-12">
-            <div className="max-w-5xl mx-auto px-6">
+        <div className="flex flex-col gap-4 items-center justify-between text-sm sm:flex-row">
+          <p className="text-slate-300 font-medium border-b border-amber-400/10 pb-2 text-center sm:border-0 sm:pb-0">
+            Amrutha Moparthi
+          </p>
+          <a href="#top" className="text-amber-300 transition hover:text-white">
+            Back to top ↑
+          </a>
+        </div>
 
-                {/* Divider */}
-                <div className="border-t border-gray-200 mb-8"></div>
+        <p className="text-sm text-slate-400 text-center mt-6 max-w-xl mx-auto leading-relaxed">
+          Senior AI & ML Engineer specializing in generative AI, retrieval augmentation, cloud MLOps, and secure enterprise deployments.
+        </p>
 
-                {/* Top Row */}
-                <div className="flex justify-between items-center text-sm">
-                    <p
-                        className="text-gray-700 font-medium inline-block"
-                        style={{ borderBottom: "2px solid var(--color-accent)", paddingBottom: "2px" }}
-                    >
-                        Sai Krishna
-                    </p>
-
-                    <a
-                        href="#top"
-                        className="text-gray-400 transition duration-300 hover:text-[#D97706]"
-                    >
-                        Back to top ↑
-                    </a>
-                </div>
-
-                {/* Tagline */}
-                <p className="text-sm text-gray-500 text-center mt-6 max-w-md mx-auto leading-relaxed">
-                    Senior Full Stack .NET Developer with 10 years of enterprise application experience.
-                </p>
-
-                {/* Copyright */}
-                <p className="text-xs text-gray-400 text-center mt-8">
-                    ©2026 Sai Krishna. All rights reserved.
-                </p>
-
-            </div>
-        </footer>
-    );
+        <p className="text-xs text-slate-500 text-center mt-8">
+          ©2026 Amrutha Moparthi. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
 }

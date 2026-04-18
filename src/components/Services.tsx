@@ -1,50 +1,50 @@
 import FadeIn from "./FadeIn";
 import { FiArrowUpRight } from "react-icons/fi";
 
+const cards = [
+  {
+    title: "Generative AI Systems",
+    description:
+      "Build enterprise-ready generative AI products with secure model integration, prompt optimization, and cost-aware inference.",
+  },
+  {
+    title: "RAG & Semantic Search",
+    description:
+      "Create grounded retrieval pipelines using embeddings, vector indexes, hybrid search, and document chunking for accurate answers.",
+  },
+  {
+    title: "Cloud MLOps & Deployment",
+    description:
+      "Automate model delivery with Terraform, Kubernetes, CI/CD, monitoring, and cloud-native ML tooling across AWS, Azure, and GCP.",
+  },
+  {
+    title: "Secure AI Operations",
+    description:
+      "Implement governance, access control, encryption, PII masking, and safety guardrails to keep AI systems compliant and reliable.",
+  },
+];
+
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-white">
-      <div className="max-w-5xl mx-auto px-5 md:px-6">
+    <section id="services" className="py-24 bg-slate-950">
+      <div className="max-w-6xl mx-auto px-5 md:px-6">
         <FadeIn>
-          <h2 className="text-2xl font-bold mb-2">What I Deliver</h2>
-          <p className="text-gray-500 text-sm mb-10">
-            End-to-end delivery for enterprise systems in healthcare, financial services,
-            government, and telecom.
-          </p>
+          <div className="mb-12 text-center">
+            <p className="text-sm uppercase tracking-[0.3em] text-amber-300 mb-3">What I Build</p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">Enterprise AI Solutions</h2>
+          </div>
 
-          <a
-            href="https://www.linkedin.com/in/krishnaaaaaa/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block border border-gray-200 rounded-2xl p-8 hover:shadow-md hover:border-gray-300 transition-all duration-200"
-          >
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-2">
-                  Open for Opportunities
-                </p>
-                <h3 className="text-xl font-semibold mb-3 group-hover:underline underline-offset-4 decoration-[#D97706]">
-                  Full Stack .NET Engineering
-                </h3>
-                <p className="text-gray-600 text-sm leading-relaxed max-w-xl">
-                  I design and modernize enterprise applications with ASP.NET Core APIs,
-                  Angular and React frontends, secure service communication, and cloud-native
-                  deployment pipelines across Azure and AWS.
-                </p>
-                <div className="flex flex-wrap gap-2 mt-5">
-                  {[".NET 8", "Angular/React/Blazor", "Azure & AWS", "Event-Driven Systems"].map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs px-3 py-1 rounded-full bg-gray-100 text-gray-600 transition hover:bg-[#FEF3C7]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+          <div className="grid gap-6 md:grid-cols-2">
+            {cards.map((card) => (
+              <article key={card.title} className="rounded-[2rem] border border-slate-800 bg-slate-900/90 p-8 shadow-2xl shadow-slate-950/20 transition duration-300 hover:-translate-y-1 hover:border-amber-400">
+                <div className="flex items-center justify-between gap-4 mb-4">
+                  <h3 className="text-xl font-semibold text-white">{card.title}</h3>
+                  <FiArrowUpRight className="text-amber-300" size={20} />
                 </div>
-              </div>
-              <FiArrowUpRight className="text-gray-400 group-hover:text-[#D97706] transition shrink-0 mt-1" size={20} />
-            </div>
-          </a>
+                <p className="text-slate-300 leading-7">{card.description}</p>
+              </article>
+            ))}
+          </div>
         </FadeIn>
       </div>
     </section>

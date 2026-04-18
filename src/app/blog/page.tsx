@@ -2,8 +2,8 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata = {
-  title: "Writing | Sai Krishna",
-  description: "Notes on software engineering, cloud architecture, and building distributed systems.",
+  title: "Writing | Amrutha Moparthi",
+  description: "Insights on AI engineering, MLOps, and enterprise AI systems.",
 };
 
 export default function BlogPage() {
@@ -41,7 +41,7 @@ export default function BlogPage() {
           className="text-4xl md:text-5xl font-bold tracking-tight mb-4"
           style={{ fontFamily: "var(--font-playfair, Georgia, serif)", color: "#1C1C1C" }}
         >
-          Sai Krishna
+          Amrutha Moparthi
         </h1>
         <div
           className="w-16 mx-auto mb-5"
@@ -107,7 +107,7 @@ export default function BlogPage() {
       <footer className="border-t max-w-2xl mx-auto px-6 py-8 flex justify-between items-center text-xs"
         style={{ borderColor: "#E5DDD5", color: "#8C8880" }}
       >
-        <span>Sai Krishna</span>
+        <span>Amrutha Moparthi</span>
         <Link href="/" className="transition hover:text-[#1C1C1C]">
           ← Back to portfolio
         </Link>

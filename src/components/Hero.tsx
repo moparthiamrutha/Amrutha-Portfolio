@@ -2,83 +2,82 @@ import { FiBriefcase, FiDownload, FiUser } from "react-icons/fi";
 import Image from "next/image";
 export default function Hero() {
   return (
-    <section id="top" className="pt-24 py-16 md:py-24 text-center bg-white">
-      <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-[auto_1fr] gap-12 items-center">
+    <section id="top" className="relative overflow-hidden py-20 lg:py-24 bg-slate-950">
+      <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-slate-900 via-slate-950 to-transparent opacity-80 pointer-events-none" />
+      <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
+        <div className="grid gap-12 grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] items-center">
+          <div className="space-y-8 text-left">
+            <p className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-200 shadow-sm">
+              Senior AI & ML Engineer
+            </p>
 
-        {/* Profile image */}
-        <div className="rounded-2xl transition duration-500 flex justify-center md:justify-end hover:scale-102" >
-          <Image
-            src="/images/profile/profile.jpeg"
-            alt="Sai Krishna"
-            width={400}
-            height={600}
-            className="rounded-2xl shadow-md object-cover w-48 sm:w-56 md:w-80 lg:w-96 mx-auto"
-            priority
-          />
-        </div>
+            <div className="space-y-4">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white">
+                Amrutha Moparthi
+              </h1>
+              <p className="max-w-3xl text-base sm:text-lg leading-8 text-slate-300">
+                I build production-ready generative AI systems, Retrieval-Augmented Generation workflows, and scalable cloud AI pipelines across AWS, Azure, and GCP.
+                My work is rooted in secure enterprise-grade MLOps, vector search, and intelligent agent orchestration.
+              </p>
+            </div>
 
-        {/* Right Text */}
-        <div className="text-left md:text-left">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight transition-all duration-500 hover:scale-102">
-            Sai Krishna
-          </h1>
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-3xl border border-slate-800 bg-slate-900/95 p-6 shadow-xl shadow-slate-900/20 backdrop-blur-sm">
+                <p className="text-xs uppercase tracking-[0.25em] text-slate-500">Contact</p>
+                <p className="mt-3 text-sm text-slate-100">moparthiamrutha97@gmail.com</p>
+                <p className="text-sm text-slate-100">+1 (913) 624-3992</p>
+              </div>
+              <div className="rounded-3xl border border-slate-800 bg-slate-900/95 p-6 shadow-xl shadow-slate-900/20 backdrop-blur-sm">
+                <p className="text-xs uppercase tracking-[0.25em] text-slate-500">Focus Areas</p>
+                <p className="mt-3 text-sm text-slate-100 leading-7">
+                  Generative AI, RAG, semantic search, cloud-native MLOps, secure AI deployment.
+                </p>
+              </div>
+            </div>
 
-          <p className="text-xs text-gray-400 mt-2 mb-3 tracking-wide">
-            krishna5913575@gmail.com · +1 (678) 824-5884
-          </p>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="#experience"
+                className="inline-flex items-center gap-2 rounded-full bg-amber-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:-translate-y-1 hover:bg-amber-400"
+              >
+                <FiBriefcase />
+                View Experience
+              </a>
+              <a
+                href="https://www.linkedin.com/in/amrutha-moparthi-921967222/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/90 px-6 py-3 text-sm text-slate-200 transition hover:border-amber-400 hover:text-white"
+              >
+                <FiUser size={16} />
+                LinkedIn Profile
+              </a>
+              <a
+                href="mailto:moparthiamrutha97@gmail.com"
+                className="inline-flex items-center gap-2 rounded-full border border-amber-400 bg-transparent px-6 py-3 text-sm text-amber-300 transition hover:bg-amber-500/10"
+              >
+                <FiDownload size={16} />
+                Email Me
+              </a>
+            </div>
+          </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-1">
-            Senior Full Stack .NET Developer
-          </h2>
-
-          <p className="text-sm text-gray-500 mb-5 tracking-wide">
-            10+ years · Healthcare · Financial Services · Government · Telecom
-          </p>
-
-          <p className="text-gray-600 mb-8 leading-relaxed max-w-lg">
-            Results-driven full stack engineer with deep expertise in C#, .NET Core, ASP.NET Core
-            Web API, Angular, React, Blazor, SQL Server, Azure, and AWS. I specialize in
-            microservices and event-driven enterprise systems built for high-volume workloads.
-          </p>
-
-          <div className="flex flex-wrap justify-start gap-3">
-            <a
-              href="#experience"
-              className="text-white px-6 py-3 rounded-lg inline-flex items-center gap-2
-               transition duration-300 ease-out
-               hover:-translate-y-1 hover:shadow-lg hover:bg-[#B45309]"
-              style={{ backgroundColor: "var(--color-accent)" }}
-            >
-              <FiBriefcase />
-              View Experience
-            </a>
-
-            <a
-              href="#about"
-              className="group border px-6 py-3 rounded-lg inline-flex items-center gap-2
-             transition duration-300 ease-out
-             hover:-translate-y-1 hover:shadow-md hover:bg-amber-50"
-              style={{ borderColor: "var(--color-accent)", color: "var(--color-accent)" }}
-            >
-              <FiUser size={15} />
-              About Me
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/krishnaaaaaa/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group border border-gray-300 text-gray-600 px-6 py-3 rounded-lg inline-flex items-center gap-2
-             transition duration-300 ease-out
-             hover:-translate-y-1 hover:shadow-md hover:bg-gray-50"
-            >
-              <FiDownload className="transition-transform duration-300 group-hover:-translate-y-0.5" />
-              Resume Reference (LinkedIn)
-            </a>
+          <div className="mx-auto flex justify-center lg:justify-end">
+            <div className="overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-900/90 shadow-[0_30px_80px_rgba(15,23,42,0.65)] transition duration-700 hover:-translate-y-2">
+              <div className="w-full max-w-[450px] overflow-hidden rounded-[1.75rem] bg-slate-950">
+                <Image
+                  src="/images/profile/profile.jpeg"
+                  alt="Amrutha Moparthi"
+                  width={450}
+                  height={560}
+                  className="h-auto w-full object-cover"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="mt-20 border-t border-gray-200 max-w-5xl mx-auto" />
     </section>
   );
 }

@@ -1,43 +1,44 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/next"
-import { Lora, DM_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
+import { Spectral, Space_Grotesk } from "next/font/google";
 
-const lora = Lora({
+const spectral = Spectral({
   subsets: ["latin"],
-  variable: "--font-lora",
+  variable: "--font-spectral",
+  weight: ["400", "600", "700"],
   display: "swap",
 });
 
-const dmSans = DM_Sans({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-space-grotesk",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.linkedin.com/in/krishnaaaaaa/"),
-  title: "Sai Krishna | Senior Full Stack .NET Developer",
+  metadataBase: new URL("https://www.linkedin.com/in/amrutha-moparthi-921967222/"),
+  title: "Amrutha Moparthi | Senior AI & ML Engineer",
   description:
-    "Results-driven Senior Full Stack .NET Developer with 10 years of experience across healthcare, financial services, government, and telecom domains.",
+    "Senior AI & ML Engineer specializing in generative AI, RAG, cloud AI, and MLOps for enterprise systems.",
   keywords: [
-    "Sai Krishna",
-    "Senior Full Stack .NET Developer",
-    "ASP.NET Core Web API",
-    "Angular",
-    "React",
-    "Blazor",
-    "Azure",
-    "AWS",
-    "Microservices",
-    "Event-Driven Architecture",
+    "Amrutha Moparthi",
+    "AI Engineer",
+    "ML Engineer",
+    "Generative AI",
+    "RAG",
+    "AWS Bedrock",
+    "Azure ML",
+    "GCP Vertex AI",
+    "MLOps",
+    "Semantic Search",
   ],
   openGraph: {
-    title: "Sai Krishna | Senior Full Stack .NET Developer",
+    title: "Amrutha Moparthi | Senior AI & ML Engineer",
     description:
-      "10 years building scalable enterprise applications with .NET, Angular/React, Azure, and AWS.",
-    url: "https://www.linkedin.com/in/krishnaaaaaa/",
-    siteName: "Sai Krishna",
+      "Generative AI leader building RAG, semantic search, and MLOps solutions for regulated enterprise environments.",
+    url: "https://www.linkedin.com/in/amrutha-moparthi-921967222/",
+    siteName: "Amrutha Moparthi",
     type: "website",
   },
 };
@@ -48,8 +49,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${lora.variable} ${dmSans.variable}`}>
-      <body className="bg-gray-50 text-gray-900 antialiased">
+    <html lang="en" className={`${spectral.variable} ${spaceGrotesk.variable}`}>
+      <body className="bg-slate-950 text-slate-100 antialiased">
         <Analytics />
         {children}
       </body>
