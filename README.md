@@ -3,7 +3,7 @@
 Personal portfolio website built with Next.js and Tailwind CSS.
 
 ## 🚀 Live Website
-https://www.linkedin.com/in/amrutha-moparthi-921967222/
+https://amrutha-moparthi-portfolio.vercel.app/
 
 ## 🛠 Tech Stack
 - Next.js
