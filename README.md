@@ -1,9 +1,9 @@
-# Sai Krishna — Portfolio
+# Amrutha Moparthi — Portfolio
 
 Personal portfolio website built with Next.js and Tailwind CSS.
 
 ## 🚀 Live Website
-https://www.linkedin.com/in/krishnaaaaaa/
+https://www.linkedin.com/in/amrutha-moparthi-921967222/
 
 ## 🛠 Tech Stack
 - Next.js
@@ -24,4 +24,4 @@ Automatically deployed through Vercel on every push to `main`.
 
 ---
 
-Designed and developed by Sai Krishna.
+Designed and developed by Amrutha Moparthi.

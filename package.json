@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
+  "author": "Amrutha Moparthi <moparthiamrutha97@gmail.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

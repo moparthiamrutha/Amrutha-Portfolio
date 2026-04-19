@@ -2,7 +2,7 @@ import { FiBriefcase, FiDownload, FiUser } from "react-icons/fi";
 import Image from "next/image";
 export default function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden py-20 lg:py-24 bg-slate-950">
+    <section id="top" className="relative overflow-hidden py-16 lg:py-20 bg-slate-950">
       <div className="absolute inset-x-0 top-0 h-72 bg-gradient-to-b from-slate-900 via-slate-950 to-transparent opacity-80 pointer-events-none" />
       <div className="max-w-6xl mx-auto px-6 lg:px-8 relative">
         <div className="grid gap-12 grid-cols-1 lg:grid-cols-[1.2fr_0.8fr] items-center">
@@ -64,13 +64,13 @@ export default function Hero() {
 
           <div className="mx-auto flex justify-center lg:justify-end">
             <div className="overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-900/90 shadow-[0_30px_80px_rgba(15,23,42,0.65)] transition duration-700 hover:-translate-y-2">
-              <div className="w-full max-w-[450px] overflow-hidden rounded-[1.75rem] bg-slate-950">
+              <div className="w-full max-w-[400px] h-[500px] overflow-hidden rounded-[1.75rem] bg-slate-950">
                 <Image
                   src="/images/profile/profile.jpeg"
                   alt="Amrutha Moparthi"
-                  width={450}
-                  height={560}
-                  className="h-auto w-full object-cover"
+                  width={400}
+                  height={500}
+                  className="h-full w-full object-cover object-top scale-105"
                   priority
                 />
               </div>
